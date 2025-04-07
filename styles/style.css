@@ -1,0 +1,46 @@
+:root {
+    --fonts-family-raleway_bold: "Raleway_Bold";
+}
+
+@font-face {
+    font-family: 'Raleway_Bold';
+    src: url('../assets/fonts/Raleway-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(120deg, #f5f1e4, #fffacd, #e6ffe6);
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: var(--fonts-family-raleway_bold)
+}
+
+h1 {
+    color: #5a3e2b;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+}
+
+li {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+li span {
+    font-size: 20px;
+    margin-top: 10px;
+}
