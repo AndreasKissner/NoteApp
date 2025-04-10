@@ -24,8 +24,8 @@ function getNoteEntryTemplate(indexNote) {
 function getTrashNoteEntryTemplate(indexTrashNote) {
     return `<div class="note-container"> 
                 <li>  
-                    <span>Titel:</span> ${trashNotesTitles[indexTrashNote]} <br>
-                    <span>Notiz:</span> ${trashNotes[indexTrashNote]}
+                    <span>Titel:</span> ${allNotes.trashNotesTitles[indexTrashNote]} <br>
+                    <span>Notiz:</span> ${allNotes.trashNotes[indexTrashNote]}
                     <div class="note-buttons">
                         <button onclick="deleteTrashNotes(${indexTrashNote})">Endgültig löschen</button>
                         <button onclick="moveNoteBackFromTrash(${indexTrashNote})">Verschieben nach Notiz</button>
@@ -37,8 +37,8 @@ function getTrashNoteEntryTemplate(indexTrashNote) {
 function getArchiveNoteTemplate(indexArchiveNote) {
     return `<div class="note-container"> 
                 <li>  
-                    <span>Titel</span> ${archiveNotesTitle[indexArchiveNote]} <br>
-                    <span>Notiz:</span> ${archiveNotes[indexArchiveNote]}
+                    <span>Titel</span> ${allNotes.archiveNotesTitle[indexArchiveNote]} <br>
+                    <span>Notiz:</span> ${allNotes.archiveNotes[indexArchiveNote]}
                     <div class="note-buttons">
                         <button onclick="deleteArchivesNotes(${indexArchiveNote})">Endgültig löschen</button>
                         <button onclick="moveNoteBackFromArchive(${indexArchiveNote})">Verschieben nach Notiz</button>
