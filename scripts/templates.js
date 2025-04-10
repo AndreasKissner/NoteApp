@@ -10,7 +10,7 @@ function getRenderInputContent() {
 
 function getNoteEntryTemplate(indexNote) {
     return `<div class="note-container"> 
-                <li> 
+                <li>                                 
                     <span>Titel:</span> ${allNotes.notesTitles[indexNote]} <br>
                     <span>Notiz:</span> ${allNotes.notes[indexNote]}
                     <div class="note-buttons">
