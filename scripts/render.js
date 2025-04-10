@@ -8,7 +8,8 @@ function renderNotes() {
     let noteRef = document.getElementById("content");
     noteRef.innerHTML = "";
     noteRef.innerHTML += `<h2>Sēmeíōma<br>(Notizen)</h2>`;
-    for (let indexNote = 0; indexNote < notes.length; indexNote++) {
+                                            //
+    for (let indexNote = 0; indexNote < allNotes.notes.length; indexNote++) {
         noteRef.innerHTML += getNoteEntryTemplate(indexNote);
     }
 }

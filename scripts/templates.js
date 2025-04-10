@@ -11,8 +11,8 @@ function getRenderInputContent() {
 function getNoteEntryTemplate(indexNote) {
     return `<div class="note-container"> 
                 <li> 
-                    <span>Titel:</span> ${notesTitles[indexNote]} <br>
-                    <span>Notiz:</span> ${notes[indexNote]}
+                    <span>Titel:</span> ${allNotes.notesTitles[indexNote]} <br>
+                    <span>Notiz:</span> ${allNotes.notes[indexNote]}
                     <div class="note-buttons">
                         <button onclick="deleteNote(${indexNote})">Löschen</button> 
                         <button onclick="moveNotesToArchive(${indexNote})">Archivieren</button>
