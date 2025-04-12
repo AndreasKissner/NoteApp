@@ -1,0 +1,208 @@
+/* Allgemein */
+body{
+    width: 100%;
+    max-width: 1960px;
+    padding: 50px;
+    height: auto;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #f3b722, #d6ca6f);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hauptcontainer */
+#main {
+    width: 90%;
+    margin: 20px;
+padding: 20px;
+    background-color: rgba(255, 251, 230, 0.75);
+    border: 6px solid #4b3832;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly; 
+    align-items: flex-start; 
+    height: auto; 
+}
+
+
+.container {
+    width: 22%;
+    max-width: 200px;
+    padding: 20px;
+    background-color: #F9F9F9;
+    border: 5px solid black;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+
+}
+
+
+#input_content {
+    height: 390px;
+    justify-content: space-between;
+}
+
+
+#note_content {
+    border: 5px solid #fff700;
+}
+
+
+#trash_content {
+    background-color: #FFF0F0;
+    border: 5px solid #FF4D4D;
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+}
+
+#archiv_content {
+    background-color: #F0FFF0;
+    border: 5px solid #28A745;
+}
+
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Responsiv anpassen */
+@media (max-width: 1200px) {
+    #input_content, #note_content, #trash_content, #archiv_content {
+        width: 45%;
+    }
+    #main {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    #input_content, #note_content, #trash_content, #archiv_content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    #main {
+        justify-content: center;
+    }
+}
+
+
+
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+/* Buttons */
+/* Stil für den Titel */
+.title-box {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #4b3832;
+    word-break: break-word;
+}
+
+/* Stil für die Notizbeschreibung */
+.note-box {
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    white-space: normal;
+    padding: 10px;
+    background-color: rgba(240, 230, 210, 0.8);
+    border: 1px solid #b89a72;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    color: #4b3832;
+}
+
+/* Buttons schöner machen */
+button {
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 8px 12px;
+    background-color: #b89a72;
+    border: 1px solid #4b3832;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4b3832;
+}
+
+
+/* Eingabefelder */
+input {
+    font-family: 'Arial', sans-serif;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CCCCCC;
+    background-color: white;
+    color: #333;
+    width: calc(100% - 22px);
+    border-radius: 4px;
+}
+
+/* Liste */
+li {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+}
+ .d_none {
+    display: none; 
+}
+ 
+.overlay_style {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay_inner {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+}
